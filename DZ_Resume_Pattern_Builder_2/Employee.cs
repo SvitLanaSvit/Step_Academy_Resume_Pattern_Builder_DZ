@@ -31,33 +31,33 @@ namespace DZ_Resume_Pattern_Builder_2
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("\t\tRESUME OF EMPLOYEE");
+            sb.AppendLine("\t\tRESUME OF EMPLOYEE\n");
             if(Name != null)
             {
-                sb.AppendLine(Name);
+                sb.AppendLine($"Name:\t\t{Name}");
             }
             if(Surname != null)
             {
-                sb.AppendLine(Surname);
+                sb.AppendLine($"Surname:\t{Surname}");
             }
             if(YearOfBirth != 0)
             {
-                sb.AppendLine(YearOfBirth.ToString());
+                sb.AppendLine($"Year Of Birth:\t{YearOfBirth}");
             }
             if(Telephone != null)
             {
-                sb.AppendLine(Telephone);
+                sb.AppendLine($"Telephone:\t{Telephone}");
             }
             if(Education != null)
             {
-                sb.AppendLine(Education);
+                sb.AppendLine($"Education:\t{Education}");
             }
             if(Competences.Count > 0)
             {
                 sb.AppendLine("Competences: ");
                 foreach(var item in Competences)
                 {
-                    sb.AppendLine($"\t{item}");
+                    sb.AppendLine($"\t\t{item}");
                 }
             }
             if(WorkExperiences.Count > 0)
@@ -65,7 +65,7 @@ namespace DZ_Resume_Pattern_Builder_2
                 sb.AppendLine("WorkExperiences: ");
                 foreach(var item in WorkExperiences)
                 {
-                    sb.AppendLine($"\t{item}");
+                    sb.AppendLine($"\t\t{item}");
                 }
             }
             sb.AppendLine("------------------------------");
