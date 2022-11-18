@@ -52,7 +52,7 @@ namespace DZ_Resume_Pattern_Builder_2
             {
                 sb.AppendLine(Education);
             }
-            if(Competences != null)
+            if(Competences.Count > 0)
             {
                 sb.AppendLine("Competences: ");
                 foreach(var item in Competences)
@@ -60,7 +60,7 @@ namespace DZ_Resume_Pattern_Builder_2
                     sb.AppendLine($"\t{item}");
                 }
             }
-            if(WorkExperiences != null)
+            if(WorkExperiences.Count > 0)
             {
                 sb.AppendLine("WorkExperiences: ");
                 foreach(var item in WorkExperiences)
